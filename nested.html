@@ -1,25 +1,93 @@
 <!DOCTYPE html>
 <html>
-<body>
-<nav>
-    <ul>
-        <li><a href='index.html'>home</a></li>
-        <li><a href='nested.html'>nested examples</a></li>
-        <li><a href='attributes.html'>attribute examples</a></li>
-        <li><a href='tags.html'>tag examples</a></li>
-        <li><a href='zeke.html'>Zeke's page</a></li>
-        <li><a href='https://sinabeana4283.github.io' >Sarina's page</a></li>
-        <li><a href='https://alexanderspoon.github.io'>Alex's page</a></li>
-        <li><a href='https://sydreinert.github.io'>Sydney's page</a></li>
-        </ul>
-        
-</nav>
-<h1>
-    THIS IS THE NESTED PAGE
-</h1>
-<p>
-    why are we here? what is the point of the universe? why are we here? what is the point of the universe?
-    why are we here? what is the point of the universe?
-    why are we here? what is the point of the universe?
-    
-</p>
+
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>            
+        <title>Nested</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+
+    <body>
+
+        <div class='row center '>
+            <div class='col-2'></div>
+                <nav>
+                    <div class='col-1 nav'><a href='index.html'>HOME</a></div>
+                    <div class='col-1 nav'><a href='nested.html'>NESTED</a></div>
+                    <div class='col-1 nav'><a href='attributes.html'>ATTRIBUTE</a></div>
+                    <div class='col-1 nav'><a href='tags.html'>TAGS</a></div>
+                    <div class='col-1 nav'><a href='zeke.html'>ZEKE</a></div>
+                    <div class='col-1 nav'><a href='https://sinabeana4283.github.io' >SARINA</a></div>
+                    <div class='col-1 nav'><a href='https://alexanderspoon.github.io'>ALEX</a></div>
+                    <div class='col-1 nav'><a href='https://sydreinert.github.io'>SYDNEY</a></div>
+                </nav>
+            <div class='col-2'></div>
+        </div>
+        <hr>
+
+
+        <h1 class='center'>
+            THIS IS THE NESTED PAGE
+        </h1>
+        <br>
+
+        <!-- Alex's Nested Tags -->
+        <div class='row'>
+            <div class='col-1'></div>
+                <div class='col-10'>
+                    <h3>Alex's Nested Tags:</h3>
+                        <!--Ex1-->
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Here is a <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
+                                                link
+                                            </a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </nav>
+                        <!--Ex2-->
+                            <div>
+                                <form>
+                                    <mark>
+                                        <label for="text_box"> Here is some input: 
+                                            <input type="text" id="text_box" name="test">
+                                            </input>
+                                        </label>
+                                    </mark>
+                                </form>
+                            </div>
+                        <!--Ex3-->
+                            <ol>
+                                <li>
+                                    <del>
+                                        <strong>
+                                            <h4>
+                                                Here is deleted text
+                                            </h4>
+                                        </strong>
+                                    </del>
+                                </li>
+                            </ol>
+                        <!--Ex4-->
+                        <u>
+                            <sup>
+                                <code>
+                                    <details>
+                                        <cite>
+                                            Here are some details
+                                        </cite>
+                                    </details>
+                                </code>
+                            </sup>
+                        </u>
+                </div>
+            <div class='col-1'></div>
+        </div>
+
+
+    </body>
+
+</html>
