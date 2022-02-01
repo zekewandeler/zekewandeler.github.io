@@ -100,7 +100,10 @@
                 <ol>
                     <li>
                         <h4>
-                            Best song from Star Wars...<a href='https://www.youtube.com/watch?v=b158UKTrohU'>
+                            Best song from Star Wars...
+                                <base>
+                                    <a href='https://www.youtube.com/watch?v=b158UKTrohU' target = "_blank">
+                                </base>
                                 straight up, legendary
                             </a>
                         </h4>
@@ -108,21 +111,72 @@
                 </ol>
             </nav>
             <!--Ex2-->
-            <p>
-                <b>
-                    Hello
-                </b>
-            </p>
+            <ul>
+                <li>
+                    <p>
+                        The best game of all time<abbr title="World of Warcraft">
+                            <b>
+                                WoW
+                            </b>
+                        </abbr> 
+                        is dying 
+                    </p>
+                </li>
              <!--Ex3-->
-            <p>
-               Somtimes letters like <var>b</var> or <var>x</var> are slanted because they are variables
-            </p>
+                    <li>
+                        <p>
+                            Somtimes letters like 
+                                <var>
+                                    <mark>
+                                        b
+                                    </mark>
+                                </var> 
+                            or 
+                                <var>
+                                    <mark>
+                                        x
+                                    </mark>
+                                </var> 
+                            are slanted because they are variables.
+                                        <small>
+                                            Which means its usually related to math...which 
+                                                <u>
+                                                sucks.
+                                                </u>
+                                        </small>
+                        </p>
+                    </li>
              <!--Ex4-->
+            <li> 
+                <button onclick="showContent()">
+                    <b>
+                        <var>
+                            <u>
+                                Show hidden content
+                            </u>
+                        </var>
+                    </b>
+                </button>
+            </li>
+             <template>
+                 <div class = "col-1"></div>
+                 <div class = "col-10">    
+             <p>hi</p>
+            </div>    
+            </template>  
+                    <script>
+                        function showContent() {
+                            var temp = document.getElementsByTagName("template")[0];
+                            var clon = temp.content.cloneNode(true);
+                            document.body.appendChild(clon);
+                            }
+                    </script>
             
-            
+            </ul>
         </div>
         <div class='col-1'></div>
     </div>
+    <!--end of sydney's section-->
 
 
 </body>
