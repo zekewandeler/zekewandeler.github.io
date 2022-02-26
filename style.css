@@ -109,10 +109,24 @@ img {
     border: 5px solid rgb(105, 28, 28);
 }
 
+
+/* Zeke's CSS */
+#ZekePhoto {
+    max-width: 200px;
+}
 em span {
     color: #83b651;
 }
 
+
+#title {
+    font-family: federo, sans-serif;
+    font-size: 3em;
+}
+
+li img {
+    width:100%;
+}
 
 /* Sarina's CSS  */
 
