@@ -70,6 +70,7 @@ img {
 
 .nav a:hover{
     color: rgba(0,0,0,1);
+    font-size: 110%;
 }
 
 #backgroundShape {
@@ -92,9 +93,18 @@ img {
     border-radius: 6px;
     padding: 5%;
     background-color: white;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 20px rgba(83, 68, 40, 0.2);
+    margin: 25px;
+}
+
+.content p {
+    line-height:30px;
 }
 
 .attrEx {
     color:rgb(255, 0, 234);
+}
+
+.content iframe {
+    border: 5px solid rgb(105, 28, 28);
 }
