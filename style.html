@@ -12,6 +12,46 @@
         rel="stylesheet">
 </head>
 
+<style>
+    #banner {
+        border-radius: 50%;
+      background-image: url("https://static.wikia.nocookie.net/halo/images/6/67/Douglas-042HaloWarsCover.jpg/revision/latest?cb=20150509075640"); /* The image used */
+     background-color: #cccccc; 
+     height: 300px; 
+     background-position: top; 
+     background-repeat: no-repeat; 
+     background-size: cover; 
+
+     text-align: center;
+     font-size: 1.8em;
+     font-family: cursive;
+     color: white;
+     box-shadow: 0px 0px 100px #e2b36c;
+    }
+
+    #zekeheading {
+        color: white;
+        font-style: oblique;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .switch {
+        font-size: 1.2em;
+        width: 400px;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5%;
+
+    }
+
+</style>
 <body>
     <nav class="row nav center">
         <div class="col-1 logo"><a href="#">®</a></div>
@@ -34,6 +74,7 @@
         THIS IS THE STYLE PAGE
     </h1>
 
+<!--Alex's Section----------------------------------------------------------->
     <div class="row">
         <div class="col-1"></div>
 
@@ -54,6 +95,7 @@
         <div class="col=1"></div>   
     </div>
 <br>
+<!--Sarina's Section----------------------------------------------------------->
     <div class="row">
         <div class="col-1"></div>
 
@@ -78,6 +120,24 @@
             <h3>Sydney's Styling<h3>
                 <p style="padding:10px; border-style: dashed; border-color:rgb(255, 255, 255) ;background-color:plum; text-shadow: 2px 2px 4px #6f00ff;color:rgb(26, 8, 61); font-style:unset; font-family:'Times New Roman', Times, serif;">Changing the bacgkround and text colors to a nice purple. That is pleasing to the eye. As well as adding a nice text font and style.</p>
 
+        </div>
+
+        <div class="col=1"></div>   
+    </div>
+    <br>
+    <!--Zeke's Section----------------------------------------------------------->
+    <div class="row">
+        <div class="col-1"></div>
+
+        <div class='col-10 content' style="background-color:#323331">
+            <h3 id="zekeheading">Zeke's Styling &nbsp; *White & oblique*<h3>
+            <br>
+                <p id="banner" >A 'p' tag with: <br> a background image <br> that glows, <br> is rounded, <br> and has cursive type.</p>
+               <div class="buttons">
+                <button id="1" class="switch"  onclick="function change(){document.getElementById('1').style.backgroundColor = '#dd5853'; document.getElementById('2').style.backgroundColor = '#83b651'; }; change();">Button that will change color</button>
+                <button id="2" class="switch" onclick="function change(){document.getElementById('1').style.backgroundColor = '#83b651'; document.getElementById('2').style.backgroundColor = '#dd5853'; }; change();">The same, but will flip it back.</button>
+               </div>
+                
         </div>
 
         <div class="col=1"></div>   

@@ -108,3 +108,81 @@ img {
 .content iframe {
     border: 5px solid rgb(105, 28, 28);
 }
+
+em span {
+    color: #83b651;
+}
+
+
+/* Sarina's CSS  */
+
+.vidcorner2 {
+    border-radius: 10%;
+  }
+  a{
+      color: hotpink;
+  }
+  a:hover {
+      color: green;
+  }
+  .h {
+      text-shadow: 2px 2px #ff0000;
+  }
+
+  ul li abbr {
+      color: steelblue;
+  }
+
+  li strong h1 {
+    color:blue;
+    font-size:46px;
+  }
+/* Sydney's CSS  */
+
+.vidcorner {
+    border-radius: 10%;
+  }
+  h4 {
+text-shadow: 2px 2px 5px rgb(255, 0, 255);
+  }
+
+  .container {
+    position: relative;
+    /* width: 50%; */
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width:  500px;
+  height: 500px;
+  object-fit: cover;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #292929;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
