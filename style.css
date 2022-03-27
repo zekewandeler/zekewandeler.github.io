@@ -89,11 +89,12 @@ img {
     font-size: 4em; 
     margin: -20px 1em -20px 0px;
 }
+
 .content {
     border-radius: 6px;
     padding: 5%;
     background-color: white;
-    box-shadow: 10px 10px 20px rgba(83, 68, 40, 0.2);
+    box-shadow: 10px 10px 20px 10px rgba(83, 68, 40, 0.2);
     margin: 25px;
 }
 
@@ -286,4 +287,12 @@ text-shadow: 2px 2px 5px rgb(255, 0, 255);
 
 .navbar a:hover{
     color: rgba(0,0,0,1);
+}
+
+.randNumStyling {
+    color: white;
+    background-color: #3190cf;
+    border-radius: 5%;
+    border: 4px solid #2370a3;
+    padding: 5px;
 }
