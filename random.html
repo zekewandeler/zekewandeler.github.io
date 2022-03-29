@@ -186,9 +186,13 @@
         document.body.appendChild(img);
         }
 
-        document.getElementById('danBtn').addEventListener('click', () =>
-            show_image("DanTheMan.png", 200, 300, 'Dan')
-        );
+        document.getElementById('danBtn').addEventListener("click", showDan); 
+            function showDan() {
+                for (let i = 0; i < 5; i++) {
+                    show_image("DanTheMan.png", 200, 300, 'Dan')
+                } 
+            }
+        
     </script>
 
 </body>
