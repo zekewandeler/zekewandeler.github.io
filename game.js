@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     start.addEventListener('click', startGame);
     function startGame() {
+        start.innerHTML = 'Start';
         removeElementsByClass('removeable');
         result.innerText = "";
         document.getElementById('life').innerHTML = 5;
@@ -54,8 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkWin() {
         if (lives < 2) {
-            result.innerText = "You Lose";
+            start.innerHTML = 'Restart';
+            alert("You Lose");
         }
+
     }
 
 
