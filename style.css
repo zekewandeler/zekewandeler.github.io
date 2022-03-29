@@ -58,6 +58,17 @@ img {
     text-align: center;
 }
 
+#webLogo , #webLogo:hover{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+    
+}
+
+
 .nav {
     font-weight: 900;
     margin: 2em 0 0em 0;
@@ -85,9 +96,9 @@ img {
     filter: blur(100px);
 }
 .logo{
-    color: rgba(0,0,0,1) !important;
-    font-size: 4em; 
-    margin: -20px 1em -20px 0px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 2.2em; 
+    margin: 0px -4px 0 0px;
 }
 
 .content {
@@ -253,6 +264,12 @@ text-shadow: 2px 2px 5px rgb(255, 0, 255);
   object-fit: cover;
   }
   
+  .coverphoto {
+      height: 300px;
+      object-fit: cover;
+  }
+
+
   .middle {
     transition: .5s ease;
     opacity: 0;
