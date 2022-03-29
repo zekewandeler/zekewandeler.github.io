@@ -32,6 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let Max = document.getElementById('randMax').value;
         let parsedMin = parseInt(Min);
         let parsedMax = parseInt(Max);
+
+        if(parsedMax > 1000){
+            document.getElementById('generateCap').innerHTML = "Not that high, jeez! Try again.";
+            return;
+        }
         let randNum = Math.floor(Math.random() * (parsedMax - parsedMin + 1) ) + parsedMin; 
         randNumDisplay.hidden = false;
         randNumDisplay.innerHTML = randNum;
