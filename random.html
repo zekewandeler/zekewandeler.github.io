@@ -116,6 +116,9 @@
                     <div id="randomResult">
                         <span id="randomNum" class="randNumStyling" hidden>Random Number</span>
                     </div>
+                    <div>
+                        <button id="danBtn" class="btn btn-primary">Click Me (a lot)</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,6 +135,8 @@
                 Right?</small>
         </div>
     </footer>
+
+
 
     <!--Bootstrap Javascript-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -159,6 +164,27 @@
             var b = random(255);
             return `rgb(${r},${g},${b})`
         }
+    </script>
+
+    <script>
+        function show_image(src, width, height, alt) {
+        let img = document.createElement("img");
+            img.src = src;
+            img.width = width;
+            img.height = height;
+            img.alt = alt;
+        
+        // set the position
+        img.style.position = 'absolute';
+        img.style.top = document.body.clientHeight * Math.random() + 'px';
+        img.style.left = document.body.clientWidth * Math.random() + 'px';
+
+        document.body.appendChild(img);
+        }
+
+        document.getElementById('danBtn').addEventListener('click', () =>
+            show_image("DanTheMan.png", 200, 300, 'Dan')
+        );
     </script>
 
 </body>
