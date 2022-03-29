@@ -166,12 +166,17 @@
     crossorigin="anonymous"></script>
 
   <script>
-    function navColor() {
       document.getElementById('randomMinZeke').innerHTML = random(1000);
       document.getElementById('randomMinAlex').innerHTML = random(2000);
       document.getElementById('randomMinSydney').innerHTML = random(5000);
       document.getElementById('randomMinSarina').innerHTML = random(500);
 
+    function random(num) {
+      return Math.floor(Math.random() * num)
+    }
+  </script>
+  <script>
+    function navColor() {
       document.getElementsByClassName('logo')[0].style.color = getRandomColor();
     }
 
