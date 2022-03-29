@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('generateCap').innerHTML = "Not that high, jeez! Try again.";
             return;
         }
+        else {
+            document.getElementById('generateCap').innerHTML = "higher range preferable)";
+        }
         let randNum = Math.floor(Math.random() * (parsedMax - parsedMin + 1) ) + parsedMin; 
         randNumDisplay.hidden = false;
         randNumDisplay.innerHTML = randNum;
