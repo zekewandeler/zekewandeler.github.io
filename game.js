@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         start.innerHTML = 'Start';
         removeElementsByClass('removeable');
         result.innerText = "";
-        document.getElementById('life').innerHTML = 5;
+        document.getElementById('life').innerHTML = 8;
 
         let wordNumber = Math.floor(Math.random() * wordList.length);
         let word = wordList[wordNumber]
