@@ -90,7 +90,7 @@
 
           -Anthony Ellertson</p>
           <p class="card-text"><small class="text-muted">Cans of redbull consumed: <span id="randomMinSarina"></span></small></p>
-        <a href="https://sinabeana4283.github.io" class="btn btn-primary stretched-link">Personal Page</a>
+        <a href="https://sinabeana4283.github.io" class="btn btn-info stretched-link">Personal Page</a>
       </div>
     </div>
     <div class="card bg-light ">
@@ -101,7 +101,7 @@
 
           -Anthony Ellertson</p>
           <p class="card-text"><small class="text-muted">Bugs created:  <span id="randomMinAlex"></span></small></p>
-        <a href="https://alexanderspoon.github.io" class="btn btn-success stretched-link">Personal Page</a>
+        <a href="https://alexanderspoon.github.io" class="btn btn-info stretched-link">Personal Page</a>
       </div>
     </div>
     <div class="card bg-light">
@@ -112,7 +112,7 @@
 
           -Anthony Ellertson</p>
           <p class="card-text"><small class="text-muted">Amount of life wasted on WOW: <span id="randomMinSydney"></span> hours </small></p>
-        <a href="https://sydreinert.github.io" class="btn btn-primary stretched-link">Personal Page</a>
+        <a href="https://sydreinert.github.io" class="btn btn-info stretched-link">Personal Page</a>
       </div>
     </div>
   </div>
@@ -166,12 +166,17 @@
     crossorigin="anonymous"></script>
 
   <script>
-    function navColor() {
       document.getElementById('randomMinZeke').innerHTML = random(1000);
       document.getElementById('randomMinAlex').innerHTML = random(2000);
       document.getElementById('randomMinSydney').innerHTML = random(5000);
       document.getElementById('randomMinSarina').innerHTML = random(500);
 
+    function random(num) {
+      return Math.floor(Math.random() * num)
+    }
+  </script>
+  <script>
+    function navColor() {
       document.getElementsByClassName('logo')[0].style.color = getRandomColor();
     }
 
