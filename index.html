@@ -73,9 +73,13 @@
       <img class="card-img-top coverphoto" src="zeke.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Zeke</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-          content. This content is a little bit longer.</p>
-        <a href="zeke.html" class="btn btn-primary stretched-link">Personal Page</a>
+        <p class="card-text">"When life gives you lemons, they're probably controlled by an offshore conglomerate anyways
+          so society is doomed." 
+          
+          -Anthony Ellertson</p>
+        <p class="card-text"><small class="text-muted">Last mentally stable <span id="randomMinZeke"></span> hours ago</small></p>
+        <a href="zeke.html" class="btn btn-info stretched-link">Personal Page</a>
+        
       </div>
     </div>
     <div class="card bg-light">
@@ -84,7 +88,8 @@
         <h5 class="card-title">Sarina</h5>
         <p class="card-text">“All human actions are equivalent and all are on principle doomed to failure.”
 
-          - Ellertson</p>
+          -Anthony Ellertson</p>
+          <p class="card-text"><small class="text-muted">Cans of redbull consumed: <span id="randomMinSarina"></span></small></p>
         <a href="https://sinabeana4283.github.io" class="btn btn-primary stretched-link">Personal Page</a>
       </div>
     </div>
@@ -94,7 +99,8 @@
         <h5 class="card-title">Alex</h5>
         <p class="card-text">“The rightful claim to dissent is an existential right of the individual.”
 
-          - Ellertson</p>
+          -Anthony Ellertson</p>
+          <p class="card-text"><small class="text-muted">Bugs created:  <span id="randomMinAlex"></span></small></p>
         <a href="https://alexanderspoon.github.io" class="btn btn-primary stretched-link">Personal Page</a>
       </div>
     </div>
@@ -104,7 +110,8 @@
         <h5 class="card-title">Sydney</h5>
         <p class="card-text">“I took a test in Existentialism. I left all the answers blank and got 100.”
 
-          - Ellertson</p>
+          -Anthony Ellertson</p>
+          <p class="card-text"><small class="text-muted">Amount of life wasted on WOW: <span id="randomMinSydney"></span> hours </small></p>
         <a href="https://sydreinert.github.io" class="btn btn-primary stretched-link">Personal Page</a>
       </div>
     </div>
@@ -160,6 +167,11 @@
 
   <script>
     function navColor() {
+      document.getElementById('randomMinZeke').innerHTML = random(1000);
+      document.getElementById('randomMinAlex').innerHTML = random(2000);
+      document.getElementById('randomMinSydney').innerHTML = random(5000);
+      document.getElementById('randomMinSarina').innerHTML = random(500);
+
       document.getElementsByClassName('logo')[0].style.color = getRandomColor();
     }
 
