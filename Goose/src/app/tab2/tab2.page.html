@@ -6,14 +6,20 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
+
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
 
+ 
   <ion-button shape="round">Round Button</ion-button>
+  
+
+
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -25,7 +31,7 @@
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
   </ion-card>
-  ion-card>
+  <ion-card>
   <ion-item>
     <ion-icon name="pin" slot="start"></ion-icon>
     <ion-label>ion-item in a card, icon left, button right</ion-label>
@@ -37,6 +43,27 @@
     within an ion-card-content element.
   </ion-card-content>
 </ion-card>
+<ion-card>
+  <ion-item href="#" class="ion-activated">
+    <ion-icon name="wifi" slot="start"></ion-icon>
+    <ion-label>Card Link Item 1 activated</ion-label>
+  </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-item href="#">
+    <ion-icon name="wine" slot="start"></ion-icon>
+    <ion-label>Card Link Item 2</ion-label>
+  </ion-item>
+
+  <ion-item class="ion-activated">
+    <ion-icon name="warning" slot="start"></ion-icon>
+    <ion-label>Card Button Item 1 activated</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="walk" slot="start"></ion-icon>
+    <ion-label>Card Button Item 2</ion-label>
+  </ion-item>
+</ion-card>
+
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
 </ion-content>
