@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ModalController, NavParams } from '@ionic/angular';
 
 @Component({
@@ -10,6 +10,8 @@ export class ImageModalPage implements OnInit {
 
   img: any;
 
+  @ViewChild('slider', {read:ElementRef}) slider: ElementRef;
+
   sliderOpts = {
     zoom:{
       maxRatio: 3
@@ -20,7 +22,7 @@ export class ImageModalPage implements OnInit {
   { }
 
   ngOnInit() {
-    this.img = this.navParams.get('image');
+    this.img = this.navParams.get('img');
   }
 
   zoom(zoomIn: boolean){

@@ -1,6 +1,6 @@
 
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { CapacitorGoogleMaps } from '@capacitor-community/capacitor-googlemaps-native';
+//import { CapacitorGoogleMaps } from '@capacitor-community/capacitor-googlemaps-native';
 // import { Geolocation } from '@capacitor/geolocation';
 
 @Component({
