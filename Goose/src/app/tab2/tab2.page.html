@@ -8,6 +8,19 @@
 
 
 <ion-content [fullscreen]="true">
+  <!-- <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+        <ion-img [src]="photo.webviewPath"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
   <div class="ion-padding">
     <ion-button (click)="getCurrentCoordinates()" expand="block">
       Get Location
@@ -41,7 +54,7 @@
 
   <ion-row>
     <ion-col size="3"></ion-col>
-    <ion-col><ion-button shape="round">Open Camera</ion-button></ion-col>
+    <ion-col><ion-button (click)="addPhotoToGallery()" shape="round">Open Camera</ion-button></ion-col>
     <ion-col size="3"></ion-col>
   </ion-row>
 <br>

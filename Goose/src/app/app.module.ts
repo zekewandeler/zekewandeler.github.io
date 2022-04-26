@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 // geolocation and native-geocoder
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
-
 // import { GoogleMapsModule } from '@angular/google-maps'
 
 
@@ -18,7 +17,7 @@ import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [Geolocation, NativeGeocoder, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [ Geolocation, NativeGeocoder, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
