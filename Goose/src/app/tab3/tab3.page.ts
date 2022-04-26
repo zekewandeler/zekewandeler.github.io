@@ -11,11 +11,11 @@ export class Tab3Page {
 
   constructor (private modalController: ModalController){
   }
-  openPreview(img){
+  openPreview(image){
    this.modalController.create({
     component: ImageModalPage,
      componentProps:{
-       img
+       img:image
      }
    }).then(modal =>modal.present());
   }

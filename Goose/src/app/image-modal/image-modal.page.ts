@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController, NavParams } from '@ionic/angular';
 
 @Component({
   selector: 'app-image-modal',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageModalPage implements OnInit {
 
-  constructor() { }
+  img: any;
+
+  sliderOpts = {
+    zoom:{
+      maxRatio: 3
+  }
+  };
+
+  constructor(private navParams: NavParams, private modalController: ModalController)
+  { }
 
   ngOnInit() {
+    this.img = this.navParams.get('image');
   }
 
+  zoom(zoomIn: boolean){
+
+  }
+  close(){
+    this.modalController.dismiss();
+  }
 }
