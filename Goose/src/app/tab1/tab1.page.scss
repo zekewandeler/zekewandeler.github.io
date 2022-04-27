@@ -3,9 +3,15 @@ ion-col {
   }
 
   #map {
-    height: 400px;
-    /* The height is 400 pixels */
+    height: 100%;
     width: 100%;
-    /* The width is the width of the web page */
+  }
+
+  .content {
+    color: black;
+  }
+
+  #infoPic {
+    max-width: 100px !important;
   }
   
