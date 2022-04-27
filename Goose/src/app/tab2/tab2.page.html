@@ -1,13 +1,49 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Counter Page
+      Encounter
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Encounter</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <br><br><br>
+    <ion-row>
+      <ion-col size="5">
+        <ion-button expand="block" fill="outline">Poop</ion-button>
+    </ion-col>
+      <ion-col>
+        <ion-item>
+          vs.
+        </ion-item>
+      </ion-col>
+      <ion-col size="5">
+        <ion-button expand="block" fill="outline">Angry</ion-button>
+    </ion-col>
+    </ion-row>
+
+
+<br>
+
+<ion-list-header>
+<ion-label>Present Your Evidence...</ion-label>
+</ion-list-header>
+
+<ion-grid>
+
+  <ion-row>
+    <ion-col size="3"></ion-col>
+    <ion-col><ion-button (click)="addPhotoToGallery()" shape="round">Open Camera</ion-button></ion-col>
+    <ion-col size="3"></ion-col>
+  </ion-row>
+
   <!-- <ion-fab vertical="bottom" horizontal="center" slot="fixed">
     <ion-fab-button (click)="addPhotoToGallery()">
       <ion-icon name="camera"></ion-icon>
@@ -20,6 +56,8 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+
 
   <div class="ion-padding">
     <ion-button (click)="getCurrentCoordinates()" expand="block">
@@ -44,34 +82,62 @@
     </ion-list>    
   </div>
 
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Counter</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-<ion-grid>
 
-  <ion-row>
-    <ion-col size="3"></ion-col>
-    <ion-col><ion-button (click)="addPhotoToGallery()" shape="round">Open Camera</ion-button></ion-col>
-    <ion-col size="3"></ion-col>
-  </ion-row>
+
+  <br>
 <br>
+
 <br>
-  <ion-row>
-    <ion-col size="5">
-      <ion-button expand="block" fill="outline">Poop</ion-button>
-  </ion-col>
-    <ion-col>
-      <ion-item>
-        vs.
-      </ion-item>
-    </ion-col>
-    <ion-col size="5">
-      <ion-button expand="block" fill="outline">Angry</ion-button>
-  </ion-col>
-  </ion-row>
+<ion-list-header>
+<ion-label>Select encounter type...</ion-label>
+</ion-list-header>
+
+    <ion-list>
+      <ion-radio-group value="poop">
+    
+        <ion-item>
+          <ion-label>Poop</ion-label>
+          <ion-radio slot="start" value="poop"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label> Angry</ion-label>
+          <ion-radio slot="start" value="angry"></ion-radio>
+        </ion-item>
+    
+      </ion-radio-group>
+    </ion-list>
+
+
+
+<!-- Disabled and readonly textarea in an item with a stacked label -->
+<ion-item>
+  <ion-label position="stacked">Summary</ion-label>
+  <ion-textarea
+    disabled
+    readonly
+    value="Tell us a bit about your own goose story!">
+  </ion-textarea>
+</ion-item>
+
+<!-- Textarea in an item with a floating label -->
+<ion-item>
+  <ion-label position="floating">Description</ion-label>
+  <ion-textarea></ion-textarea>
+</ion-item>
+
+
+
+<!-- Textarea with custom number of rows and cols -->
+<ion-item>
+  <ion-label>Notes</ion-label>
+  <ion-textarea rows="6" cols="20" placeholder="Is there anything you want to note?"></ion-textarea>
+</ion-item>
+
+
+
+
 
 <ion-row>
   <ion-col size="3"></ion-col>
