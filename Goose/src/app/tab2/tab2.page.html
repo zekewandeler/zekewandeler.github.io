@@ -9,142 +9,103 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Encounter</ion-title>
+      <ion-title size="large">New Encounter</ion-title>
     </ion-toolbar>
   </ion-header>
 
 
-  <br><br><br>
+
+  <ion-grid>
     <ion-row>
-      <ion-col size="5">
-        <ion-button expand="block" fill="outline">Poop</ion-button>
-    </ion-col>
-      <ion-col>
-        <ion-item>
-          vs.
-        </ion-item>
-      </ion-col>
-      <ion-col size="5">
-        <ion-button expand="block" fill="outline">Angry</ion-button>
+      <ion-col size="12">
+      <ion-item>
+        <ion-label position="floating">Title</ion-label>
+        <ion-textarea [(ngModel)]="encounterTitle" id="encounterTitle" rows="1"></ion-textarea>
+      </ion-item>
     </ion-col>
     </ion-row>
-
-
+<ion-row>
+  <ion-col size="12">
+  <ion-item>
+  <ion-label position="floating">Description</ion-label>
+  <ion-textarea [(ngModel)]="encounterDesc" id="encounterDesc" rows="3" cols="20" placeholder="Tell us a bit about your own goose story!"></ion-textarea>
+</ion-item></ion-col></ion-row>
+      <ion-row>
+        <ion-col size="12">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="https://cdn-icons-png.flaticon.com/512/1391/1391045.png">
+          </ion-thumbnail>
+          <ion-label position="stacked">Poop Count</ion-label>
+          <ion-input [(ngModel)]="encounterPoop" id="encounterPoop" type="number" value="0"></ion-input>
+        </ion-item>
+        </ion-col>
+        <ion-col size="12">
+        <ion-item >
+          <ion-thumbnail slot="start">
+          <img src="https://cdn-icons-png.flaticon.com/512/141/141723.png">
+          </ion-thumbnail>
+          <ion-label position="stacked">Angry Goose</ion-label>
+          <ion-input [(ngModel)]="encounterGoose" id="encounterGoose" type="number" value="0"></ion-input>
+        </ion-item>
+        </ion-col>
+      </ion-row>
 <br>
-
-<ion-list-header>
-<ion-label>Present Your Evidence...</ion-label>
-</ion-list-header>
-
-<ion-grid>
+<br>
+<ion-row>
+  <ion-col size="2"></ion-col>
+  <ion-col>
+    <ion-button (click)="getCurrentLocation()"  color="secondary" shape="block">
+      <ion-icon name="search-outline"></ion-icon>
+  Get Current Location</ion-button>
+  </ion-col>
+  <ion-col size="2"></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size="12">
+  <ion-item>
+    <ion-label position="stacked">Longitude</ion-label>
+    <ion-textarea [(ngModel)]="encounterLong"  rows="1" value="{{longitude}}"></ion-textarea>
+  </ion-item>
+</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size="12">
+  <ion-item>
+    <ion-label position="stacked">Latitude</ion-label>
+    <ion-textarea [(ngModel)]="encounterLat" rows="1" value="{{latitude}}"></ion-textarea>
+  </ion-item>
+</ion-col>
+</ion-row>
+<br>
+<br>
 
   <ion-row>
     <ion-col size="3"></ion-col>
-    <ion-col><ion-button (click)="addPhotoToGallery()" shape="round">Open Camera</ion-button></ion-col>
+    <ion-col>
+      <ion-button (click)="addPhotoToGallery()"  shape="block">
+      <ion-icon name="add-outline"></ion-icon>
+       Photo Proof</ion-button>
+    </ion-col>
     <ion-col size="3"></ion-col>
   </ion-row>
+  <ion-row>
+    <ion-col nowrap  size="6" *ngFor="let photo of photoService.photos; index as position">
+      <ion-img [src]="photo.webviewPath"></ion-img>
+    </ion-col>
+  </ion-row>
 
-  <!-- <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button (click)="addPhotoToGallery()">
-      <ion-icon name="camera"></ion-icon>
-    </ion-fab-button>
-  </ion-fab> -->
-  <ion-grid>
-    <ion-row>
-      <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
-        <ion-img [src]="photo.webviewPath"></ion-img>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-
-
-  <div class="ion-padding">
-    <ion-button (click)="getCurrentCoordinates()" expand="block">
-      Get Location
-    </ion-button>
-  <ion-list>
-    <ion-list-header>
-      <ion-label>Location Coordinates</ion-label>
-    </ion-list-header>
-    <ion-item>
-      <ion-label>
-        Latitue
-      </ion-label>
-      <ion-badge color="danger" slot="end">{{latitude}}</ion-badge>
-    </ion-item>
-    <ion-item>
-      <ion-label>
-        Longitude
-      </ion-label>
-      <ion-badge color="danger" slot="end">{{longitude}}</ion-badge>
-    </ion-item>
-    </ion-list>    
-  </div>
-
-
-
-
-  <br>
-<br>
-
-<br>
-<ion-list-header>
-<ion-label>Select encounter type...</ion-label>
-</ion-list-header>
-
-    <ion-list>
-      <ion-radio-group value="poop">
-    
-        <ion-item>
-          <ion-label>Poop</ion-label>
-          <ion-radio slot="start" value="poop"></ion-radio>
-        </ion-item>
-    
-        <ion-item>
-          <ion-label> Angry</ion-label>
-          <ion-radio slot="start" value="angry"></ion-radio>
-        </ion-item>
-    
-      </ion-radio-group>
-    </ion-list>
-
-
-
-<!-- Disabled and readonly textarea in an item with a stacked label -->
-<ion-item>
-  <ion-label position="stacked">Summary</ion-label>
-  <ion-textarea
-    disabled
-    readonly
-    value="Tell us a bit about your own goose story!">
-  </ion-textarea>
-</ion-item>
-
-<!-- Textarea in an item with a floating label -->
-<ion-item>
-  <ion-label position="floating">Description</ion-label>
-  <ion-textarea></ion-textarea>
-</ion-item>
-
-
-
-<!-- Textarea with custom number of rows and cols -->
-<ion-item>
-  <ion-label>Notes</ion-label>
-  <ion-textarea rows="6" cols="20" placeholder="Is there anything you want to note?"></ion-textarea>
-</ion-item>
-
-
-
-
-
-<ion-row>
-  <ion-col size="3"></ion-col>
-  <ion-col><ion-button expand="full" routerLink="../tab1">Submit</ion-button></ion-col>
-  <ion-col size="3"></ion-col>
-</ion-row>
 </ion-grid>
-
-  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
 </ion-content>
+
+
+<ion-footer>
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="reportEncounter()" shape="block" expand='full' color="tertiary">
+        <ion-icon name="add-outline"></ion-icon>
+        Report Encounter
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>
