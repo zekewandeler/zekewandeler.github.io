@@ -15,10 +15,11 @@ window.onload = function () {
             .then((response) => response.json())
             .then((data) => {
                 if(data.pass == 1){
-                    console.log("passed");
+                    console.log(data.pass + " passed");
                     window.location.href = "https://zekewandeler.github.io/success.html";
                 }
                 else {
+                    console.log(data.pass);
                     //add maybe coooler stuff here
                     window.location.href = "https://zekewandeler.github.io/login.html";
                 }
