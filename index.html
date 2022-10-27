@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alexa Secure Login Skill</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div  id="home" class="container">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <i class="bi bi bi-quote" style="font-size: 2.5rem;"></i>
+        </a>
+  
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#home" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="#team" class="nav-link px-2 link-dark">Team</a></li>
+          <li><a href="#features" class="nav-link px-2 link-dark">Features</a></li>          
+        </ul>
+  
+        <div class="col-md-3 text-end">
+          <a href="https://github.com/zekewandeler/Alexa2FA" class="btn btn-primary" role="button">Download Skill</a>
+          <a href="login.html" class="btn btn-outline-secondary" role="button">Try Demo</a>
+        </div>
+      </header>
+    </div>
+    <div class="container px-5 py-5 text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="5%" height="5%" fill="#4682B4" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+      </svg>
+      <h1 class="display-5 fw-bold">Multi-factor Authentication Reimagined</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Because what's more secure then your voice...</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="https://github.com/zekewandeler/Alexa2FA" class="btn btn-primary btn-lg" role="button">Download Skill</a>
+          <a href="login.html" class="btn btn-outline-secondary btn-lg" role="button">Try Demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="container px-4 py-4">
+      <h2 id="team" class="my-4">Meet our team...</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://d25vtythmttl3o.cloudfront.net/uploads/sites/156/2021/06/jack-200x250.png">
+          <div class="card-body">
+            <p class="card-text">Zeke - "the conquerer"</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://d25vtythmttl3o.cloudfront.net/uploads/sites/156/2021/06/jack-200x250.png">
+          <div class="card-body">
+            <p class="card-text">Ryna - "the sorcerer supreme"</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://d25vtythmttl3o.cloudfront.net/uploads/sites/156/2021/06/jack-200x250.png">
+          <div class="card-body">
+            <p class="card-text">Steve - "the bewildered"</p>
+          </div>
+        </div>
+      </div>
+    </div></div>
+    <div class="container px-4 py-4 mt-3" id="features">
+      <h2 class="">Our Skill Features</h2>
+      <div class="row g-4 py-4 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15%" height="15%" fill="#4682B4" class="bi bi-node-plus-fill" viewBox="0 0 16 16">
+            <path d="M11 13a5 5 0 1 0-4.975-5.5H4A1.5 1.5 0 0 0 2.5 6h-1A1.5 1.5 0 0 0 0 7.5v1A1.5 1.5 0 0 0 1.5 10h1A1.5 1.5 0 0 0 4 8.5h2.025A5 5 0 0 0 11 13zm.5-7.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2a.5.5 0 0 1 1 0z"/>
+          </svg>
+          <h3 class="fs-2">Add & Remove Apps</h3>
+          <p>Logging in has never been easier or more secure! When you download our skill just tell Alexa to add your app that you want to log in to.</p>
+        </div>
+        <div class="feature col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15%" height="15%" fill="#4682B4" class="bi bi-clock-history" viewBox="0 0 16 16">
+            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+          </svg>
+          <h3 class="fs-2">See your login history</h3>
+          <p>If somehow a crazy hackerman got into your vocal chords and copied them, you can still outsmart them by checking your recent log ins.</p>
+        </div>
+        <div class="feature col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15%" height="15%" fill="#4682B4" class="bi bi-soundwave" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"/>
+          </svg>
+          <h3 class="fs-2 px-2">Alexa..Log me into</h3>
+          <p>You just gotta tell Alexa the phrase and then it will be all good! But if you do not say the phrase then you most likely can't read in which case you shouldn't be using the internet. :) </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="mb-4">See it in it's 240p glory</h2>
+      <div class="VideoContainer">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© U Talk We Verify</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#team" class="nav-link px-2 text-muted">Team</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link px-2 text-muted">Features</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
+<!-- <DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  overflow: hidden;
+                  background-color: #666;
+                }
+
+                li {
+                  float: left;
+                }
+
+                li a {
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                }
+
+                li a:hover:not(.active) {
+                  background-color: #111;
+                }
+
+                .active {
+                  background-color: #39E;
+                }
+            </style>
+        </head>
+        <body>
+            <ul>
+                <li><a href="https://htmlpreview.github.io/?https://github.com/SteveClowdus/Alexa2FA_CHW/blob/c4d7da4730fa102293e8efcd46833e6f67c52b2a/Alexa2FA_Clowdus.html">Home</a></li>
+                <li><a href="https://htmlpreview.github.io/?https://github.com/SteveClowdus/Alexa2FA_CHW/blob/ce93a70fb03ebe36d2926437564fc0099f8bc5d9/DemoLoginPage_Clowdus.html">Demo Login Page</a></li>
+                <li><a href="">Skill Explanation</a></li>
+                <li><a href="">Commercial</a></li>
+                <li><a href="">Skill Download</a></li>
+            </ul>
+        </body>
+    </html>
+  
+<h1>Alexa Two-Factor Authentication</h1>
+<br><br><br>
+<h2>Team members: Zeke Wandeler, Ryna Hall, and Steve Clowdus</h2> -->

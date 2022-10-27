@@ -1,7 +1,0 @@
-{
-  "name": "Goose",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
