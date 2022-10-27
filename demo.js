@@ -16,11 +16,11 @@ window.onload = function () {
             .then((data) => {
                 if(data.pass == 1){
                     console.log("passed");
-                    window.location.href = "https://zekewandeler.github.io/success.html"
+                    window.location.href = "https://zekewandeler.github.io/success.html";
                 }
                 else {
                     //add maybe coooler stuff here
-                    history.back();
+                    window.location.href = "https://zekewandeler.github.io/login.html";
                 }
             })
         });
