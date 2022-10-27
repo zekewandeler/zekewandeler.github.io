@@ -1,7 +1,7 @@
-let count = 60;
+let count = 30;
 let timer;
 window.onload = function () {
-    count = 60;
+    count = 30;
     //console.log("Loaded..");
     timer = setInterval(countdown, 1000);
 
