@@ -4,8 +4,7 @@ window.onload = function () {
     fetch('https://gimm340server.herokuapp.com/allHistory')
         .then((response) => response.json())
         .then((data) => {
-            //document.getElementById("passPhrase").textContent = JSON.stringify(data.phrase);
-            console.log(data);
+            //console.log(data);
             var table = document.createElement("table"), row, cellA, cellB;
             table.classList.add("table", "table-sm","table-striped");
             document.getElementById("tableDiv").appendChild(table);
@@ -25,7 +24,13 @@ window.onload = function () {
                 cellA.innerHTML = data[key].name;
                 cellB.innerHTML = formatDateTime(data[key].time);
             }
+        });
 
+        fetch('https://gimm340server.herokuapp.com/average')
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data)
+            document.getElementById("regression").innerHTML = data.time;
         });
 }
 
